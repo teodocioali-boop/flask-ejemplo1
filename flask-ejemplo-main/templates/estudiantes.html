@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🎓 Sistema de Estudiantes</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('estudiantes') }}">Estudiantes</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion">
+            <h2>Lista de Estudiantes</h2>
+            <table>
+                <thead>
+                    <tr><th>Nombre</th><th>Apellido</th><th>Carrera</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Ana</td><td>Gómez</td><td>Sistemas</td></tr>
+                    <tr><td>Luis</td><td>Pérez</td><td>Administración</td></tr>
+                    <tr><td>Sara</td><td>Ruiz</td><td>Derecho</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 Sistema de Estudiantes</p></footer>
+</body>
+</html>
