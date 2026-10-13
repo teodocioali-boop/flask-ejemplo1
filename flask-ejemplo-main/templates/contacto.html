@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🎓 Sistema de Estudiantes</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('estudiantes') }}">Estudiantes</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccion">
+            <h2>Contacto</h2>
+            <form>
+                <div class="campo"><label>Nombre</label><input type="text"></div>
+                <div class="campo"><label>Correo</label><input type="email"></div>
+                <div class="campo"><label>Mensaje</label><textarea rows="4"></textarea></div>
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 Sistema de Estudiantes</p></footer>
+</body>
+</html>
